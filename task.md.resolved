@@ -1,0 +1,28 @@
+# Task: AI-Generated Image Detection System
+
+- [x] Research & Setup <!-- id: 0 -->
+    - [x] Search for suitable pretrained PyTorch models on Hugging Face for AI vs Real detection <!-- id: 1 -->
+    - [x] Create project structure (backend/ and frontend/) <!-- id: 2 -->
+    - [x] Create implementation plan <!-- id: 3 -->
+- [x] Backend Development <!-- id: 4 -->
+    - [x] Setup Python environment and requirements.txt <!-- id: 5 -->
+    - [x] Implement [model.py](file:///C:/Users/kamac/.gemini/antigravity/brain/9c361432-c1f4-4b4a-92be-45978681eadb/backend/app/model.py) (Model loading & prediction logic) <!-- id: 6 -->
+    - [x] Implement [gradcam.py](file:///C:/Users/kamac/.gemini/antigravity/brain/9c361432-c1f4-4b4a-92be-45978681eadb/backend/app/gradcam.py) (Heatmap generation) <!-- id: 7 -->
+    - [x] Implement [main.py](file:///C:/Users/kamac/.gemini/antigravity/brain/9c361432-c1f4-4b4a-92be-45978681eadb/backend/app/main.py) (FastAPI endpoints: POST /predict) <!-- id: 8 -->
+    - [x] Verify Backend API with a test request <!-- id: 9 -->
+- [x] Frontend Development <!-- id: 10 -->
+    - [x] Initialize Next.js project <!-- id: 11 -->
+    - [x] Implement UI Components (Upload, Preview, Results) <!-- id: 12 -->
+    - [x] Implement API Integration <!-- id: 13 -->
+    - [x] Implement Grad-CAM overlay visualization <!-- id: 14 -->
+    - [x] Style application (Modern Dark Theme, Vanilla CSS) <!-- id: 15 -->
+- [x] Documentation & Final Polish <!-- id: 16 -->
+    - [x] Write README.md (Setup, Usage, Limitations) <!-- id: 17 -->
+    - [x] Verify full generic flow <!-- id: 18 -->
+    - [x] Fix Frontend Layout & Styles ([layout.tsx](file:///C:/Users/kamac/.gemini/antigravity/brain/9c361432-c1f4-4b4a-92be-45978681eadb/frontend/app/layout.tsx)) <!-- id: 19 -->
+- [/] GitHub Repository Setup <!-- id: 20 -->
+    - [x] Initialize local git repo (`git init`) <!-- id: 21 -->
+    - [x] Create [.gitignore](file:///C:/Users/kamac/.gemini/antigravity/brain/9c361432-c1f4-4b4a-92be-45978681eadb/.gitignore) <!-- id: 22 -->
+    - [x] Commit files <!-- id: 23 -->
+    - [ ] Create remote repo (Sundars-git/AI-Generated-Image-Detection-System) <!-- id: 24 -->
+    - [ ] Push code <!-- id: 25 -->
