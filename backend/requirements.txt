@@ -6,5 +6,5 @@ torchvision
 transformers
 pillow
 numpy
-opencv-python
+opencv-python-headless
 grad-cam
