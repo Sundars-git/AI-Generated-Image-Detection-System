@@ -12,15 +12,15 @@ def load_model():
     """Loads the ViT model and processor."""
     global model, processor, device
     if model is None:
-        print(f"Loading ViT model (`google/vit-base-patch16-224`) on {device}...")
+        print(f"Loading ViT model (`google/vit-tiny-patch16-224`) on {device}...")
         
         # Load Processor (handles resizing to 224x224 and normalization)
-        processor = ViTImageProcessor.from_pretrained("google/vit-base-patch16-224")
+        processor = ViTImageProcessor.from_pretrained("google/vit-tiny-patch16-224")
         
         # Load Model with head replacement for binary classification (2 classes)
         # ignore_mismatched_sizes=True is required to replace the 1000-class head
         model = ViTForImageClassification.from_pretrained(
-            "google/vit-base-patch16-224",
+            "google/vit-tiny-patch16-224",
             num_labels=2,
             ignore_mismatched_sizes=True
         )

@@ -38,8 +38,8 @@ I have successfully built the AI-Generated Image Detection System. Here is a sum
 - **Fixes Applied**: Resolved duplicate `app` directory issue and added missing `globals.css` import in `layout.tsx`.
 
 ## Known Issues & Notes
-- **Model Accuracy**: The new ViT model is pre-trained on ImageNet but has a **randomly initialized binary classification head**. Predictions will be ~50/50 until fine-tuned on a Real vs AI dataset.
-- **Initial Startup**: The first time the backend starts, it downloads the ViT model (~350MB). This can take several minutes.
+- **Model Accuracy**: The new ViT model (`google/vit-tiny-patch16-224`) is pre-trained on ImageNet but has a **randomly initialized binary classification head**. Predictions will be ~50/50 until fine-tuned on a Real vs AI dataset.
+- **Initial Startup**: The first time the backend starts, it downloads the ViT model (~30MB). This is much faster than the base model.
 
 2. **Start Frontend**: `npm run dev` inside `frontend/`
 3. **Upload Real Image**: Test with a photograph. Expect high "Real" probability.
