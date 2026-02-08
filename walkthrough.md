@@ -5,9 +5,11 @@ I have successfully built the AI-Generated Image Detection System. Here is a sum
 ## Implemented Features
 
 ### Backend
+### Backend
 - **FastAPI Server**: Implemented `/predict` endpoint to handle image uploads.
-- **Model Integration**: Integrated `openai/clip-vit-base-patch32` for zero-shot classification ("AI generated" vs "Real photo").
-- **Grad-CAM**: implemented `gradcam.py` with `pytorch-grad-cam` adapted for Vision Transformers (ViT), including a custom `CLIPWrapper` and `reshape_transform`.
+- **Model Integration**: Replaced CLIP Zero-shot with **Vision Transformer (`google/vit-base-patch16-224`)** for binary classification.
+- **API Response**: Returns `ai_generated`, `real` scores along with legacy probability keys.
+- **Grad-CAM**: (Temporarily Disabled/Placeholder) as architecture changed significantly.
 - **Validation**: Added file size and type validation logic.
 
 ### Documentation
@@ -36,8 +38,8 @@ I have successfully built the AI-Generated Image Detection System. Here is a sum
 - **Fixes Applied**: Resolved duplicate `app` directory issue and added missing `globals.css` import in `layout.tsx`.
 
 ## Known Issues & Notes
-- **Initial Startup**: The first time the backend starts, it downloads the CLIP model (~600MB). This can take several minutes depending on internet speed.
-- **Grad-CAM**: The heatmap is generated based on the attention maps of the last encoder layer of the ViT model.
+- **Model Accuracy**: The new ViT model is pre-trained on ImageNet but has a **randomly initialized binary classification head**. Predictions will be ~50/50 until fine-tuned on a Real vs AI dataset.
+- **Initial Startup**: The first time the backend starts, it downloads the ViT model (~350MB). This can take several minutes.
 
 2. **Start Frontend**: `npm run dev` inside `frontend/`
 3. **Upload Real Image**: Test with a photograph. Expect high "Real" probability.

@@ -25,4 +25,8 @@
     - [x] Create `.gitignore` <!-- id: 22 -->
     - [x] Commit files <!-- id: 23 -->
     - [ ] Create remote repo (Sundars-git/AI-Generated-Image-Detection-System) <!-- id: 24 -->
-    - [ ] Push code <!-- id: 25 -->
+    - [x] Push code <!-- id: 25 -->
+- [x] Model Upgrade (ViT) <!-- id: 26 -->
+    - [x] Replace CLIP with `google/vit-base-patch16-224` <!-- id: 27 -->
+    - [x] Implement binary classification head <!-- id: 28 -->
+    - [x] Update API response format (`ai_generated`, `real`) <!-- id: 29 -->

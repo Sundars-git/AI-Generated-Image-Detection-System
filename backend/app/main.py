@@ -43,6 +43,9 @@ async def predict(file: UploadFile = File(...)):
             heatmap_b64 = None
         
         return JSONResponse(content={
+            "ai_generated": probs["ai_generated"],
+            "real": probs["real"],
+            # Backward compatibility for Frontend
             "ai_probability": probs["ai_probability"],
             "real_probability": probs["real_probability"],
             "heatmap_image": heatmap_b64
